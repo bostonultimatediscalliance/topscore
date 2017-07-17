@@ -1,6 +1,6 @@
 # TopScore API Client
 
-[TopScore](http://www.usetopscore.com/) provides athletic league and event management for a variety of different sports -- Ultimate Frisbee, Rugby, Handball, and so on.   This is a client for their API.
+[TopScore](http://www.usetopscore.com/) provides athletic league and event management for a variety of different sports -- Ultimate Frisbee, Rugby, Handball, and so on.   This is a client for their API.  API documentation can be found in [this Google Doc](https://docs.google.com/document/d/148SFmTpsdon5xoGpAeNCokrpaPKKOSDtrLNBHOIq5c4/edit#), and at https://yoursite.com/api/help.
 
 Lots of functionality isn't supported, because it was written to solve a specific set of problems (specifically for a type of league that is unique to Boston's Ultimate Frisbee scene).  But, the basic structure of the client is straightforward and should be easy enough to extend.
 
