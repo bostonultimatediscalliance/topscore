@@ -9,7 +9,7 @@ Examples
 ### Instantiate a client
 ```
 >>> import topscore
->>> client = topscore.client.TopScoreClient(client_id=TS_CLIENT_ID, client_secret=TS_CLIENT_SECRET)
+>>> client = topscore.client.TopScoreClient(client_id=TS_CLIENT_ID, client_secret=TS_CLIENT_SECRET, base_url='https://YOURSITE.usetopscore.com')
 ```
 
 ### Get a list of games
