@@ -8,5 +8,8 @@ setup(
     license='',
     author='Ian Marlier',
     author_email='ian.marlier@buda.org',
-    description='API Client for TopScore'
+    description='API Client for TopScore',
+    install_requires=[
+    	'requests'
+    	]
 )

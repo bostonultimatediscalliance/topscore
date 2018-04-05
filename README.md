@@ -4,6 +4,12 @@
 
 Lots of functionality isn't supported, because it was written to solve a specific set of problems (specifically for a type of league that is unique to Boston's Ultimate Frisbee scene).  But, the basic structure of the client is straightforward and should be easy enough to extend.
 
+Installation
+------------
+This library isn't currently available on pypi or anything, so you'll have to install by hand.  To do so:
+# (optional but recommended) Activate the virtualenv for your use case
+# At the base level of the library repository, run `python setup.py install`
+
 Examples
 --------
 ### Instantiate a client
