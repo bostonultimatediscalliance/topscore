@@ -97,3 +97,24 @@ class TopScoreClient(object):
 
     def get_fields(self, **params):
         return self.get_paginated("fields", **params)
+
+    def update_cms_slot(self, slot_id, new_content):
+        """
+        The Topscore CMS uses a different endpoint (/admin/ rather than /api/), and as a result
+        we can't use the helper methods above.
+
+        :param slot_id: int id number of the CMS slot to update.  I don't know a better way to get this than
+                            updating in a browser with DevTools open
+        :param new_content: str the new content for the slot
+        :return: Response object
+        """
+        params = {
+            'auth_token': self.client_id
+        }
+        data = {
+            'slot-new': {
+                'content': new_content,
+                '_csrf_token': self.csrf().decode('ascii')
+            }
+        }
+        return requests.post(f'{self.base_url}/admin/cms/edit-slot/{slot_id}', params=params, data=data)
